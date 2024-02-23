@@ -1,0 +1,548 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    text-decoration: unset;
+}
+
+
+
+.scale-up-center {
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation: scale-up-center 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+
+a {
+    color: black;
+}
+
+body {
+    background: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    padding: 1rem;
+}
+
+.navbar__links {
+    flex: 1;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar__links-logo {
+    margin-right: 5rem;
+
+}
+
+.navbar__links-logo a {
+    font-size: 22px;
+    font-weight: bold;
+    color: #F2E03A;
+}
+
+.navbar__links-container {
+    flex: 1;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__links-logo p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    text-transform: capitalize;
+
+}
+
+.open {
+    display: flex;
+}
+
+.dropdown-menu {
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    text-align: end;
+    background: #F2E03A;
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+}
+
+
+
+.navbar__links-container p,
+.navbar__sign p,
+.navbar__menu-container-links p,
+.navbar__menu-container-links-sign p {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.dropdown-menu a {
+    line-height: 35px;
+    font-size: 20px;
+    font-weight: lighter;
+    z-index: 100;
+    position: relative;
+}
+
+.hero {
+    width: 100%;
+    float: left;
+    padding: 2rem;
+    background-color: #eee;
+}
+
+.hero__title,
+.hero__bg {
+    /* width: 50%; */
+    float: left;
+}
+
+.hero__title {
+    line-height: 10vh;
+}
+
+.hero__title h3 {
+    font-size: 8vw;
+    color: #8f8c8c;
+    line-height: 30px;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.reason__section,
+.features__section,
+.reason,
+.price__section,
+.feedback__section {
+    padding: 1rem;
+    width: 100%;
+    float: left;
+}
+
+.reason__title {
+    text-align: center;
+    font-size: 6vw;
+
+    line-height: 28px;
+    padding: 0 2rem;
+    color: #8f8c8c;
+
+}
+
+.reason__item {
+
+    background-color: #eee;
+    border-radius: 10px;
+
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px 0 rgb(212, 211, 211);
+}
+
+.reason__item span {
+    background-color: #F2E03A;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    font-size: 4vw;
+    border-radius: 20px;
+}
+
+.reason__item p {
+    margin-top: 1rem;
+    font-size: 4vw;
+    line-height: 25px;
+}
+
+.feature {
+    width: 80%;
+    margin-top: 1rem;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.feature__item {
+    width: 100%;
+    background-color: #F2E03A;
+    padding: 5%;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    float: left;
+}
+
+.feature__item:last-child {
+    background-color: transparent;
+    padding: 0;
+}
+
+.feature__half:last-child {
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.feature__half img {
+    max-width: 100%;
+    height: auto;
+    max-height: 50vh;
+    width: auto;
+}
+
+
+
+.feature__half__side {
+    float: left;
+
+    margin-top: 1%;
+
+    background-color: #FE8D27;
+    border-radius: 10px;
+    padding: 5%;
+}
+
+.feature__half__side:last-child {
+    background-color: #EDBBF3;
+}
+
+.feat__sub {
+    font-size: 4vw;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: start;
+}
+
+.feature__item h3 {
+    text-align: start;
+    color: #ffffff;
+}
+
+
+.feature__half h3 {
+    color: black;
+}
+
+.price__section {
+    background-color: #eee;
+}
+
+.price {
+    width: 100%;
+    float: left;
+    padding: 1% 5%;
+}
+
+.price_item {
+    background-color: #fff;
+    padding: 10%;
+    margin-top: 5%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 15px;
+}
+
+
+
+.price_item h1 {
+    font-weight: bolder;
+}
+
+.price__list {
+    line-height: 30px;
+    text-align: center;
+    font-size: large;
+}
+
+.price__list p {
+    padding-top: 0.5rem;
+}
+
+.feedback__section {
+    background-color: #eee;
+}
+
+.feedback {
+    width: 100%;
+    float: left;
+    padding: 1% 5%;
+
+}
+
+.feedback__item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    margin: 5% 0;
+    padding: 5%;
+    float: left;
+}
+
+.user {
+    font-size: 3vw;
+}
+
+.download__section {
+    width: 100%;
+    /* background-color: #F2E03A; */
+    background-image: url('images/download-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6rem 2rem;
+
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+
+    clear: both;
+
+}
+
+
+.download__section h2 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: bolder;
+    padding-bottom: 15px;
+}
+
+.download__section p {
+    font-size: 23px;
+    padding-bottom: 15px;
+    font-weight: bolder;
+
+}
+
+.download__section button {
+    padding: 1rem 3rem;
+    margin-bottom: 1rem;
+
+    border-radius: 40px;
+    border: none;
+    background-color: #ffffff;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    background-color: #fff;
+    padding: 2%;
+    text-align: center;
+
+    font-size: 12px;
+}
+
+
+/* Styling for large devices (e.g., desktops, laptops) */
+@media screen and (min-width: 1024px) {
+
+    .navbar__links-container {
+        display: flex;
+    }
+
+    .toggle__menu,
+    .dropdown-menu {
+        display: none;
+    }
+
+    .hero__title,
+    .hero__bg {
+        width: 50%;
+        float: left;
+
+    }
+
+    .hero__title {
+        padding: 0 5rem;
+    }
+
+    .hero__bg {
+        max-width: 100%;
+        overflow: hidden;
+        text-align: center;
+
+    }
+
+    .hero__bg img {
+        max-width: 100%;
+        width: auto;
+        height: 50vh;
+        /* display: block; */
+    }
+
+
+    .hero__title h3 {
+        font-size: 35px;
+        line-height: 10vh;
+        text-align: center;
+    }
+
+    .reason__section {
+        padding: 2% 6%;
+    }
+
+    .reason__title {
+        font-size: 3vw;
+        padding: 1rem 10rem;
+        line-break: loose;
+        line-height: 50px;
+    }
+
+    .reason__item {
+        padding: 2rem;
+        width: 48%;
+        /* height: auto; */
+        height: 300px;
+        overflow: hidden;
+        float: left;
+        margin-left: 1%;
+
+    }
+
+    .reason__item span {
+        padding: 0.6rem;
+        font-size: 1.3vw;
+    }
+
+    .reason__item p {
+        margin-top: 1rem;
+        font-size: 1.7vw;
+        line-height: 35px;
+    }
+
+    .feature__item h3 {
+        font-size: 2rem;
+        color: #ffffff;
+    }
+
+    .feature__half h3:first-child {
+        color: black;
+    }
+
+    .feature__half {
+        float: left;
+        width: 50%;
+    }
+
+    .feature__half__side {
+        width: 49%;
+        margin-right: 1%;
+
+        height: auto;
+        overflow: hidden;
+        max-height: 325px;
+    }
+
+    .feature__half:last-child {
+        max-width: 30%;
+        height: auto;
+        overflow: hidden;
+    }
+
+
+
+    .feature__half img {
+        max-height: 60vh;
+    }
+
+
+
+    .feat__sub {
+        font-size: 1.3rem;
+        line-height: 30px;
+    }
+
+
+
+    .price_item {
+        width: 31.6666667%;
+        float: left;
+        padding: 2%;
+        margin-top: 0;
+        margin-left: 1%;
+    }
+
+    .feedback {
+        padding: 1% 6%;
+    }
+
+    .feedback__item {
+        width: 45%;
+        margin: 0 2%;
+        padding: 2%;
+        float: left;
+    }
+
+    .user {
+        font-size: 1vw;
+    }
+
+
+    .download__section button {
+        margin-bottom: 0;
+        margin-left: 1rem;
+    }
+
+    footer {
+        padding: 1%;
+        font-size: 15px;
+    }
+}
