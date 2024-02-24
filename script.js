@@ -13,3 +13,11 @@ toggle.onclick = function () {
         : 'fa-solid fa-bars'
 
 }
+
+// Optional: You can hide the link initially and show it only when necessary
+document.getElementById('downloadLink').style.display = 'none';
+
+// Optional: Show the download link when the page finishes loading
+window.onload = function () {
+    document.getElementById('downloadLink').style.display = 'block';
+};
